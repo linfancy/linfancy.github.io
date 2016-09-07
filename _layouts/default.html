@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Myblog by linfancy</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/media/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if IE]>  
+    <script src="{{ site.baseurl }}/media/js/html5.js"></script>  
+    <![endif]-->  
+  </head>
+  <body>
+    <div>
+      <header class="header">
+        <nav class="h_nav">
+          <ul class="h_list">
+            <li class="h_litem"><a href="{{ site.baseurl }}/index.html" class="h_link">首页</a></li>
+            <li class="h_litem"><a href="{{ site.baseurl }}/category.html" class="h_link">文章</a></li>
+            <li class="h_litem"><span class="fancy_logo"></span></li>
+            <li class="h_litem"><a href="https://github.com/linfancy" class="h_link">github</a></li>
+            <li class="h_litem"><a href="" class="h_link">关于我</a></li>
+          </ul>
+        </nav>
+      </header>
+      {{ content }}
+
+      <footer class="footer">
+        © Copyright 2015 by fancylin
+      </footer>
+    </div>
+    <script type="text/javascript" src="{{ site.baseurl }}/media/js/script.js"></script>
+  </body>
+</html>

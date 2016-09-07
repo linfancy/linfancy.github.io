@@ -1,0 +1,18 @@
+---
+layout: default
+title: Category
+---
+    <div class="category">
+      <section class="content">
+        {% for category in site.categories %}
+        <article class="c_module">
+          <h2 class="c_btitle">{{ category | first }}</h2>
+          {% for posts in category %}
+          {% for post in posts %}
+          <a href="{{ site.baseurl }}{{ post.url }}" class="c_title">{{ post.title }}</a>
+          {% endfor %}
+          {% endfor %}
+        </article>
+        {% endfor %}
+      </section>
+    </div>

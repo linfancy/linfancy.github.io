@@ -1,0 +1,330 @@
+/* ============================================================
+   样式重置
+   ============================================================ */
+
+/* 重置样式 [[*/
+body,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,form,fieldset,legend,input,select,textarea,button,th,td,menu,article{margin:0;padding:0;font-family: "微软雅黑";}
+article,aside,dialog,figure,footer,header,hgroup,nav,section,select{display:block;}
+h1,h2,h3,h4,h5,h6,input,textarea,select,button,label{font-size:100%;font-weight:100;vertical-align:middle;}
+ul,dl,ol{list-style:none;}
+img,fieldset,input[type="submit"]{border:none;}
+input{outline:none;background:transparent;vertical-align:top;}	
+table{border-collapse:collapse;border-spacing:0;}		
+button{cursor:pointer;border:none;}
+textarea{word-wrap:break-word;resize:none;background:transparent;}
+/* 去除IE下拉菜单箭头 */
+select::-ms-expand{display:none;}
+/* 去除IE下radio、checkbox默认样式 */
+::-ms-check{display:none;}
+/* 去除输入框、文本域默认边框和IOS4下的内阴影 */
+input, textarea, select{-webkit-appearance:none;border:none;outline:none;}
+/* 设置Gecko内核下输入框属性placeholder中值的文件颜色 */
+input:-moz-placeholder{color:#C4C4C4;}
+/* 设置webkit内核下输入框属性placeholder中值的文件颜色 */
+::-webkit-input-placeholder{color:#C4C4C4;}
+body{background:#EAEAEA;font-family:"Helvetica";-webkit-user-select:none;/* 禁止选中文本 */-webkit-tap-highlight-color:rgba(0,0,0,0.1);/* 设置点击链接时遮罩层为全透明 */}
+/* 设置webkit内核下文字大小不小于12px */
+html,body{-webkit-text-size-adjust:none;height:100%;}
+/* 禁止长按链接、按钮、输入框出现系统默认弹框菜单 */
+a,button,input{-webkit-touch-callout:none;outline:none;}
+a,a:visited{text-decoration:none;-webkit-touch-callout:none;}
+/* HTML5 ]] */
+
+/*公共组件*/
+.header{
+	background: #323232;
+	box-shadow: 0px 0px 5px #333;
+}
+.header .h_nav{
+	margin-left:50%;
+	display: inline-block;
+}
+.header .h_list{
+	margin-left: -50%;
+	display: inline-block;
+}
+.header .h_litem{
+	float: left;
+	padding: 0 29px;
+	display: inline;
+	text-align: center;
+}
+.header .h_link{
+	display: inline-block;
+	line-height: 55px;
+	padding-top: 8px;
+	color: #fff;
+	font-size: 10px;
+	text-decoration: none;
+}
+.header .fancy_logo{
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+}
+.footer{
+	height: 40px;
+	background: #222222;
+	color: #454545;
+	line-height: 40px;
+	font-size: 12px;
+	padding-left: 40px;
+}
+
+/*首页*/
+.index .article{
+	margin: 90px 0 90px 0;
+}
+.index .a_row0{
+	width: 380px;
+	margin: 0 auto -30px;
+	overflow: hidden;
+}
+.index .a_row1{
+	width: 580px;
+	margin: 0 auto -30px;
+	overflow: hidden;
+}
+.index .a_row2{
+	width: 380px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.index .article .a_item{
+	width: 180px;
+	height: 206px;
+	float: left;
+	margin: 0 20px 0 0;
+	-webkit-clip-path:polygon(90px 0px, 180px 51px,180px 155px,90px 206px, 0px 155px, 0px 51px);
+	background-size: 100% 100%;
+}
+.index .article .a_item0{
+	background: url(../img/index_img0.jpg) no-repeat;
+}
+.index .article .a_item1{
+	background: url(../img/index_img1.jpg) no-repeat;
+}
+.index .article .a_item2{
+	background: url(../img/index_img2.jpg) no-repeat;
+}
+.index .article .a_item3{
+	background: url(../img/index_img3.jpg) no-repeat;
+}
+.index .article .a_item4{
+	background: url(../img/index_img4.jpg) no-repeat;
+}
+.index .article .a_item5{
+	background: url(../img/index_img5.jpg) no-repeat;
+}
+
+.index .article .a_item6{
+	background: url(../img/index_img6.jpg) no-repeat;
+}
+.index .article .a_item7{
+	background: url(../img/index_img7.jpg) no-repeat;
+}
+.index .article .a_text{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	margin-top: 50%;
+	font-size: 20px;
+	font-weight: bold;
+	color: #333;
+}
+.index .article .a_item:last-child{
+	margin: 0;
+}
+.index .intro{
+	background: #2eb398;
+	padding: 67px 0px;
+	overflow: hidden;
+}
+.index .intro .i_content{
+	width: 70%;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: row wrap;
+  	align-items: center;
+}
+.index .intro .i_item{
+	width: 180px;
+	height: 206px;
+	background: #eee;
+	float: left;
+	margin: 0 35px 0 0;
+	-webkit-clip-path:polygon(90px 0px, 180px 51px,180px 155px,90px 206px, 0px 155px, 0px 51px);
+}
+.index .intro .i_item img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.index .intro .i_article{
+	flex: 1;
+}
+.index .intro .i_name{
+	color: #d7fcf5;
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 40px;
+}
+.index .intro .i_work{
+	color: #20816d;
+	font-size: 18px;
+	line-height: 40px;
+}
+.index .intro .i_info{
+	color: #d7fcf5;
+	font-size: 15px;
+	line-height: 25px;
+}
+.index .touch{
+	background: #323232;
+	padding: 67px 0;
+}
+.index .touch .t_wrapper{
+	width: 70%;
+	margin: 0 auto;
+	overflow: hidden;
+	color: #bebebe;
+}
+.index .touch .t_left{
+	width: 70%;
+	float: left;
+}
+.index .touch .t_title{
+	font-size: 30px;
+	color: #e0e0e0;
+}
+.index .touch .t_tips{
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+.index .touch .form_item{
+	position: relative;
+	background: #454545;
+	margin-bottom: 16px;
+}
+.index .touch .form_label{
+	font-size: 12px;
+	position: absolute;
+	line-height: 38px;
+	left: 10px;
+}
+.index .touch .form_input{
+	color: #fff;
+	display: block;
+	width: 100%;
+	padding:0 10px 0 120px;
+	height: 38px;
+}
+.index .touch .form_textlabel{
+	width: 100%;
+	line-height: 38px;
+	font-size: 12px;
+	padding-left: 10px;
+}
+.index .touch .form_text{
+	color: #fff;
+	width: 100%;
+	height: 115px;
+	padding: 0 10px;
+}
+.index .touch .form_btn{
+	background: #2eb398;
+	color: #d7fcf5;
+	font-size: 12px;
+	text-align: center;
+	line-height: 37px;
+	padding: 0 30px;
+	float: right;
+}
+.index .touch .t_right{
+	width: 28%;
+	float: right;
+}
+.index .touch .t_right p{
+	padding: 2px 0;
+	font-size: 12px;
+	line-height: 16px;
+}
+.index .touch .t_icon{
+	display: inline-block;
+	width: 16;
+	height: 16px;
+	margin-right: 12px;
+	background:url(../img/icon.png) no-repeat;
+}
+.index .touch .t_icon_loc{
+	background-position: -18px 0;
+}
+.index .touch .t_icon_email{
+	background-position:  -34px 0px;
+}
+
+/*文章页*/
+.category .content{
+	width: 60%;
+	margin: 30px auto;
+}
+.category .c_module{
+	margin-bottom: 30px;
+	background: #eee;
+	padding: 20px 20px 30px;
+}
+.category .c_module_g{
+	background: #2eb398;
+}
+.category .c_module_g .c_btitle{
+	color: #d7fcf5;
+}
+.category .c_module_g .c_title{
+	color: #fff;
+}
+.category .c_btitle{
+	font-size: 30px;
+	font-weight: bold;
+	color: #2eb398;
+	line-height: 50px;
+}
+.category .c_title{
+	display: block;
+	line-height: 30px;
+	color: #333;
+}
+.category .c_title:hover{
+	text-decoration: underline;
+}
+
+.article .content{
+	width: 65%;
+	margin: 30px auto;
+}
+.article .content p{
+	line-height: 35px;
+}
+.article .c_btitle{
+	font-size: 30px;
+	font-weight: bold;
+	color: #2eb398;
+	line-height: 60px;
+}
+.article .time{
+	display: inline-block;
+	background: url(../img/time.png) center left no-repeat; 
+	padding-left: 20px; 
+	margin:0 20px 20px 0;
+	font-size: 12px;
+}
+.article .tag{
+	display: inline-block;
+	background: url(../img/tag.png) center left no-repeat;
+	padding-left: 20px;
+	font-size: 12px;
+}
+.article .c_banner{
+	width: 100%;
+	height: 300px;
+	display: block;
+}

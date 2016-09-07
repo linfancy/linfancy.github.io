@@ -1,0 +1,5 @@
+#BASE_PATH : http://linfancy.github.io/myBlog
+baseurl: http://linfancy.github.io/myBlog
+#baseurl: 
+pygment: true
+markdown: rdiscount

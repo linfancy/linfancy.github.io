@@ -1,0 +1,20 @@
+---
+layout: default
+---
+    <div class="article">
+      <section class="content">
+          <h2 class="c_btitle">{{ page.title }}</h2>
+          <div class="c_bread">
+            <span class="time">{{ page.date | date_to_string }}</span>
+            <span class="tag">
+              {% for tag in page.categories %}
+              {{ tag }}
+              {% endfor %}
+            </span>
+          </div>
+          <article>
+            <img src="{{ site.baseurl }}/media/img/article_0_banner.jpg" class="c_banner">
+            {{ content }}
+          </article>
+      </section>
+    </div>

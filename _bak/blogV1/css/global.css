@@ -1,0 +1,21 @@
+/* ============================================================
+   样式重置
+   ============================================================ */
+
+body,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,fieldset,legend,input,select,textarea,button,th,td,blockquote,address,pre{margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6,input,textarea,select,button,label{font-size:100%;vertical-align:middle;}
+ul,dl,ol{list-style:none;}
+img,fieldset{border:none;}
+img{display:inline-block;overflow:hidden;vertical-align:top;}
+em,address{font-style:normal;}
+sup,sub{vertical-align:baseline;}
+table{border-collapse:collapse;border-spacing:0;}
+q:before{content:"";}
+q:after{content:"";}
+button{cursor:pointer;}
+textarea{word-wrap:break-word;resize:none;}  /* word-wrap for opera, resize for webkit */
+/* HTML5 [[ */
+article,aside,dialog,figure,footer,header,hgroup,nav,section{display:block;}
+menu{margin:0;padding:0;}
+mark{background-color:transparent;}
+/* HTML5 ]] */
